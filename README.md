@@ -45,11 +45,11 @@
 
 - [相机畸变矫正 (矫正前后)](https://github.com/MagicTZ/Visual-Slam-Algorithms/tree/master/ch4-disparity%2Ccamera_model%2CGN/src/undistorted)
 
-<center><img src ="IMG/ch4_test.png " width ="400"/> <img src ="IMG/ch4_undistorted.png" width = "400"/></center>
+<div align = center><img src ="IMG/ch4_test.png " width ="400"/> <img src ="IMG/ch4_undistorted.png" width = "400"/></div>
 
 - [双目视觉计算深度 (生成的三维图在pcl-viewer中显示)](https://github.com/MagicTZ/Visual-Slam-Algorithms/tree/master/ch4-disparity%2Ccamera_model%2CGN/src/disparity)
 
-<center><img src = "IMG/left.png" width = "250"/> <img src = "IMG/right.png" width = "250"/> <img src ="IMG/disparity.png" width ="250"/> </center>
+<div align = center><img src = "IMG/left.png" width = "250"/> <img src = "IMG/right.png" width = "250"/> <img src ="IMG/disparity.png" width ="250"/> </div>
 
 <div align = center> <img src ="IMG/ch4_depth.png" width = "550"/></div>
 
@@ -57,37 +57,39 @@
 
 <div align = center> <img src ="IMG/ch5_ICP1.png " width ="300"/> <img src ="IMG/ch5_ICP2.png" width = "293"/> </div>
 
-- ORB算法结果图
+- [ORB算法结果图](https://github.com/MagicTZ/Visual-Slam-Algorithms/tree/master/ch5-VO(Keypoints)/src)
 
 <center>
     <img src ="IMG/ch5_FAST.png " width ="700"/> <div>Fast特征点提取以及ORB描述子</div>
  </center>
 
 
-<center>
+<div align = center>
 <img src ="IMG/ch5_ORBmatch.png" /><div>匹配结果图</div>
- </center>
+ </div>
 
-- LK 光流法跟踪 (前向金字塔-反向金字塔)
 
-<center><img src ="IMG/forward.png " width ="400"/> <img src ="IMG/inverse.png" width = "400"/></center>
+- [LK 光流法跟踪 (前向金字塔-反向金字塔)](https://github.com/MagicTZ/Visual-Slam-Algorithms/tree/master/ch6-VO(direct_and_optical_flow)/src)
 
-- 直接法跟踪(多层金字塔)
+<div align = center><img src ="IMG/forward.png " width ="400"/> <img src ="IMG/inverse.png" width = "400"/></div>
 
-<center><img src = "IMG/direct1.png" width = "100"/> <img src = "IMG/direct2.png" width = "160"/> <img src ="IMG/direct3.png" width ="200"/> <img src ="IMG/direct4.png" width ="280"/> </center>
+- [直接法跟踪(多层金字塔)](https://github.com/MagicTZ/Visual-Slam-Algorithms/tree/master/ch6-VO(direct_and_optical_flow)/src)
 
-- 后端优化(BA)
+<div align = center><img src = "IMG/direct1.png" width = "100"/> <img src = "IMG/direct2.png" width = "160"/> <img src ="IMG/direct3.png" width ="200"/> <img src ="IMG/direct4.png" width ="280"/> </div>
 
-<center>
-<img src ="IMG/g2oBA1.png " width ="410"/> <img src ="IMG/g2oBA2.png" width = "400"/>
+- [后端优化(BA)](https://github.com/MagicTZ/Visual-Slam-Algorithms/tree/master/ch7-BackEnd/src)
+
+<div align = center>
+<img src ="IMG/g2oBA1.png " width ="300"/> <img src ="IMG/g2oBA2.png" width = "300"/>
 <div>g2oBA(基于BAL, 即Bundle Adjustment in large数据集)</div>
-</center>
+</div>
 
-<center>
+<div align = center>
 <img src ="IMG/0.png" width = "200"/> <img src ="IMG/1.png" width = "200"/> <img src ="IMG/2.png" width = "200"/> <img src ="IMG/3.png" width = "200"/>
  <img src ="IMG/直接法BA.png " width ="410"/> 
 <div>直接法BA(给定相机位姿文件以及三维点坐标和周围16个小块的灰度值)</div>
-</center>
+</div>
+
 
 ---
 ## 维护者
