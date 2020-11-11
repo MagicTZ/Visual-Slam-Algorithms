@@ -212,7 +212,6 @@ void DirectPoseEstimationSingleLayer(
         //update = H.inverse() * b;
         update = H.ldlt().solve(b);
         T21 = Sophus::SE3d::exp(update) * T21;
-        // END YOUR CODE HERE
 
         cost /= nGood;
 
@@ -265,7 +264,6 @@ void DirectPoseEstimationMultiLayer(
 
     // create pyramids
     vector<cv::Mat> pyr1, pyr2; // image pyramids
-    // TODO START YOUR CODE HERE
     for (int i = 0; i < pyramids; i++) {
         cv::Mat tmp1, tmp2;
         cv::resize(img1, tmp1, cv::Size(img1.cols * scales[i], img1.rows * scales[i]));
@@ -274,8 +272,6 @@ void DirectPoseEstimationMultiLayer(
         pyr2.push_back(tmp2);
     }
 
-    // END YOUR CODE HERE
-
     double fxG = fx, fyG = fy, cxG = cx, cyG = cy;  // backup the old values
     for (int level = pyramids - 1; level >= 0; level--) {
         VecVector2d px_ref_pyr; // set the keypoints in this pyramid level
@@ -283,15 +279,12 @@ void DirectPoseEstimationMultiLayer(
             px_ref_pyr.push_back(scales[level] * px);
         }
 
-        // TODO START YOUR CODE HERE
         // scale fx, fy, cx, cy in different pyramid levels
         fx = fxG * scales[level];
         fy = fyG * scales[level];
         cx = cxG * scales[level];
         cy = cyG * scales[level];
 
-
-        // END YOUR CODE HERE
         DirectPoseEstimationSingleLayer(pyr1[level], pyr2[level], px_ref_pyr, depth_ref, T21);
     }
 

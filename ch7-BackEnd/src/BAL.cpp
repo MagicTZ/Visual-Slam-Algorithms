@@ -114,10 +114,7 @@ void BAL::Normalize() {
   }
 }
 
-//==TODO: 可以暂时不做
 void BAL::Perturb() {}
-
-
 
 void BAL::CameraToAngleAxisAndCenter(const double *camera, double *angle_axis, double *center) const {
   VectorRef angle_axis_ref(angle_axis, 3);

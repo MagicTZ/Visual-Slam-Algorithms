@@ -1,5 +1,4 @@
 //
-// Created by 高翔 on 2017/12/15.
 // Edited by 谭臻 on 2020/10/13.
 //
 

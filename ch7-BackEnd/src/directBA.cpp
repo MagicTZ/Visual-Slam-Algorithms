@@ -89,7 +89,6 @@ class PointVertex : public g2o::BaseVertex<3, Eigen::Vector3d> {
   virtual bool write(ostream &out) const {}
 };
 
-// TODO edge of projection error, implement it
 // 16x1 error, which is the errors in patch
 typedef Eigen::Matrix<double, 16, 1> Vector16d;
 class EdgeDirectProjection : public g2o::BaseBinaryEdge<16, Vector16d, PointVertex, VertexSophus> {
@@ -107,7 +106,6 @@ class EdgeDirectProjection : public g2o::BaseBinaryEdge<16, Vector16d, PointVert
   ~EdgeDirectProjection() {}
 
   virtual void computeError() override {
-    // TODO START YOUR CODE HERE
     // compute projection error ...
     // const g2o::VertexSBAPointXYZ *vertexPw = static_cast<const g2o::VertexSBAPointXYZ *>(vertex(0));
     auto *vertexPw = static_cast<const PointVertex *>(_vertices[0]);
@@ -129,7 +127,6 @@ class EdgeDirectProjection : public g2o::BaseBinaryEdge<16, Vector16d, PointVert
         }
       }
     }
-    // END YOUR CODE HERE
   }
 
   // Let g2o compute jacobian for you
@@ -203,8 +200,6 @@ int main(int argc, char **argv) {
   optimizer.setAlgorithm(solver);
   optimizer.setVerbose(true);
 
-  // TODO add vertices, edges into the graph optimizer
-  // START YOUR CODE HERE
   // 添加路标三维点
   for (int i = 0; i < points.size(); i++) {
     // g2o::VertexSBAPointXYZ *vertexPw = new g2o::VertexSBAPointXYZ();
@@ -238,14 +233,11 @@ int main(int argc, char **argv) {
       optimizer.addEdge(edge);
     }
   }
-  // END YOUR CODE HERE
 
   // perform optimization
   optimizer.initializeOptimization();
   optimizer.optimize(200);
 
-  // TODO fetch data from the optimizer
-  // START YOUR CODE HERE
   for (int c = 0; c < poses.size(); c++) {
     for (int p = 0; p < points.size(); p++) {
       Eigen::Vector3d Pw = dynamic_cast<PointVertex *>(optimizer.vertex(p))->estimate();
@@ -254,7 +246,6 @@ int main(int argc, char **argv) {
       poses[c] = Tcw;
     }
   }
-  // END YOUR CODE HERE
 
   // plot the optimized points and poses
   Draw(poses, points);
