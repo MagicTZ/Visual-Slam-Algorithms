@@ -1,0 +1,4 @@
+/opt/clion-2020.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" /home/magictz/Projects/slam/homework/ch9-SlamSystem/src
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug

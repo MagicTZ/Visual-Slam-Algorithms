@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/BA_test.dir/main.cpp.o CMakeFiles/BA_test.dir/MyBA.cpp.o CMakeFiles/BA_test.dir/common.cpp.o  -o BA_test  libcommon_lib.a 

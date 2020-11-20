@@ -112,8 +112,8 @@ class ObsEdge : public g2o::BaseBinaryEdge<2, Vector2d, CameraVertex, PointVerte
     Vector3d pt_camera = K.rotation * pt + K.translation;  // 世界坐标系转到相机坐标系
     // 相机坐标系转到图像坐标系
     Vector2d pt_image = Vector2d(K.f * pt_camera[0] / pt_camera[2], K.f * pt_camera[1] / pt_camera[2]);
-    // 加入畸变模型
-    double r2 = K.k1 * K.k1 + K.k2 * K.k2;
+    // 加入畸变模型 r^2 = x^2 + y^2
+    double r2 = pt_image[0] * pt_image[0] + pt_image[1] * pt_image[1];
     double x = 0, y = 0;
     x = pt_image[0] * (1 + K.k1 * r2 + K.k2 * r2 * r2);
     y = pt_image[1] * (1 + K.k1 * r2 + K.k2 * r2 * r2);
@@ -203,8 +203,6 @@ void BA(BAL &bal) {
   for (int i = 0; i < bal.num_cameras(); i++) {
     CameraVertex *v = new CameraVertex();
     double *camera = cameras + camera_block_size * i;
-    // cout<<"camera paras: " <<cameras[0]<<' '<<cameras[1]<<' '<<cameras[2]<<' '<<camera_block_size<<endl;
-    cout << "camera paras: " << camera[0] << ' ' << camera[1] << ' ' << camera[2] << endl;
     v->setId(i);
     v->setEstimate(CameraParameter(camera));  // 第i组相机参数进行估计
     optimizer.addVertex(v);

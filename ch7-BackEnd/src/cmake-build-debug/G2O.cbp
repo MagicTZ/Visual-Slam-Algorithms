@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="G2O"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\..\..\usr\local\share\sophus\;CMake Files\..\..\..\..\..\..\..\usr\local\share\sophus\cmake\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Pangolin\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="directBA">
+				<Option output="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/directBA" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/magictz/Projects/slam/homework/ch7-BackEnd/src"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 directBA"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="directBA/fast">
+				<Option output="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/directBA" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/magictz/Projects/slam/homework/ch7-BackEnd/src"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 directBA/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bal_common">
+				<Option output="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/libbal_common.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/magictz/Projects/slam/homework/ch7-BackEnd/src"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 bal_common"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bal_common/fast">
+				<Option output="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/libbal_common.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/magictz/Projects/slam/homework/ch7-BackEnd/src"/>
+					<Add directory="/usr/include/suitesparse"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 bal_common/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/BAL.cpp">
+			<Option target="bal_common"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/BAL.h">
+			<Option target="bal_common"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/MyBA.cpp">
+			<Option target="bal_common"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/MyBA.h">
+			<Option target="bal_common"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/directBA.cpp">
+			<Option target="directBA"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake/FindCSparse.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake/FindEigen3.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/cmake/FindG2O.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/../../../../../../../usr/local/share/sophus/cmake/SophusConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/../../../../../../../usr/local/share/sophus/cmake/SophusConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/../../../../../../../usr/local/share/sophus/cmake/SophusTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/../../../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/../../../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/../../../../../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/../../../../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/../../../../../../../usr/local/lib/cmake/Pangolin/PangolinConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/../../../../../../../usr/local/lib/cmake/Pangolin/PangolinConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/../../../../../../../usr/local/lib/cmake/Pangolin/PangolinTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch7-BackEnd/src/../../../../../../../usr/local/lib/cmake/Pangolin/PangolinTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

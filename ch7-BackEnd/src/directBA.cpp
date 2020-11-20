@@ -22,6 +22,7 @@ using namespace std;
 
 #include <pangolin/pangolin.h>
 #include <boost/format.hpp>
+#include<memory>
 
 using namespace Eigen;
 
@@ -191,9 +192,14 @@ int main(int argc, char **argv) {
 
   // build optimization problem
   typedef g2o::BlockSolver<g2o::BlockSolverTraits<6, 3>> DirectBlock;  // 求解的向量是6＊1的
+  // 使用智能指针进行定义, 注意调用变量的时候需要使用std::move进行transfer ownership, 否则会出现错误
+  // 并且定义的时候不建议使用new, 使用std::make_unique<>, 但是std::make_unique仅在c++14以后支持,
+  // 需要在CMakeLists.txt文件中添加set(CMAKE_CXX_STANDARD 14)
   std::unique_ptr<DirectBlock::LinearSolverType> linearSolver(
-      new g2o::LinearSolverDense<DirectBlock::PoseMatrixType>());
+    new g2o::LinearSolverDense<DirectBlock::PoseMatrixType>());
   std::unique_ptr<DirectBlock> solver_ptr(new DirectBlock(std::move(linearSolver)));  // 矩阵快求解器
+  //std::unique_ptr<DirectBlock> solver_ptr = std::make_unique<DirectBlock>(std::move(linearSolver));
+  
   auto solver = new g2o::OptimizationAlgorithmLevenberg(std::move(solver_ptr));
 
   g2o::SparseOptimizer optimizer;

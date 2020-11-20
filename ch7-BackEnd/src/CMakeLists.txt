@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 2.8)
 
 project(G2O)
 set(CMAKE_BUILD_TYPE "Release")
-set(CMAKE_CXX_FLAGS "-O3 -std=c++11")
+set(CMAKE_CXX_FLAGS "-O3 -std=c++14")
+set(CMAKE_CXX_STANDARD 14) # 如果需要使用C++14特性, 如std::make_unique<>
 
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 
@@ -20,7 +21,7 @@ SET(G2O_LIBS g2o_csparse_extension g2o_stuff g2o_core cxsparse g2o_types_slam3d)
 
 include_directories(${PROJECT_SOURCE_DIR} ${EIGEN3_INCLUDE_DIR} ${CSPARSE_INCLUDE_DIR})
 
-add_library(bal_common BAL.cpp)
+add_library(bal_common BAL.cpp MyBA.cpp MyBA.h)
 #add_executable(g2oBA g2oBA.cpp)
 #target_link_libraries(g2oBA ${G2O_LIBS} bal_common ${OpenCV_LIBS})
 

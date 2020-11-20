@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="MyBA_EIGEN"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\eigen3\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BA_test">
+				<Option output="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/BA_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 BA_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BA_test/fast">
+				<Option output="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/BA_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 BA_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="common_lib">
+				<Option output="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/libcommon_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 common_lib"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="common_lib/fast">
+				<Option output="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/libcommon_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 common_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/BAL.cpp">
+			<Option target="common_lib"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/BAL.h">
+			<Option target="common_lib"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/MyBA.cpp">
+			<Option target="BA_test"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/MyBA.h">
+			<Option target="BA_test"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/common.cpp">
+			<Option target="BA_test"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/common.h">
+			<Option target="common_lib"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/main.cpp">
+			<Option target="BA_test"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/../../../../../../../usr/lib/cmake/eigen3/Eigen3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/../../../../../../../usr/lib/cmake/eigen3/Eigen3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/magictz/Projects/slam/homework/ch9-SlamSystem/src/../../../../../../../usr/lib/cmake/eigen3/Eigen3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
